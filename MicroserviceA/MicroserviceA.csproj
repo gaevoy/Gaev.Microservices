@@ -30,7 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>MicroserviceA.Program</StartupObject>
+    <StartupObject>Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -45,6 +45,10 @@
     <ProjectReference Include="..\Gaev.Microservices.Autofac\Gaev.Microservices.Autofac.csproj">
       <Project>{0c95c890-488e-48d8-a24f-a38d66f13665}</Project>
       <Name>Gaev.Microservices.Autofac</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gaev.Microservices.Nancy\Gaev.Microservices.Nancy.csproj">
+      <Project>{e758e41f-2f81-4c13-81a4-23d9ee6a1069}</Project>
+      <Name>Gaev.Microservices.Nancy</Name>
     </ProjectReference>
     <ProjectReference Include="..\Gaev.Microservices.Topshelf\Gaev.Microservices.Topshelf.csproj">
       <Project>{8F7340EA-1288-4C1A-BED9-7560F3B19027}</Project>

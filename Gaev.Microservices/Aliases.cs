@@ -12,4 +12,8 @@
     {
         public static NameConfigPipe Will() { return new NameConfigPipe(); }
     }
+    public static class It
+    {
+        public static NameConfigPipe Will() { return new NameConfigPipe(); }
+    }
 }
