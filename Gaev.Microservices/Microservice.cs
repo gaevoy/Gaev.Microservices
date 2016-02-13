@@ -28,6 +28,15 @@ namespace Gaev.Microservices
         protected abstract ISetup Starting();
         protected virtual void Stopping(ISetup setup) { }
 
+        /// <summary>
+        /// AppDomain and MarshalByRefObject life time : how to avoid RemotingException? http://stackoverflow.com/a/6111079
+        /// </summary>
+        /// <returns></returns>
+        public override object InitializeLifetimeService()
+        {
+            return null;
+        }
+
         public static NameConfigPipe Will()
         {
             return new NameConfigPipe();
